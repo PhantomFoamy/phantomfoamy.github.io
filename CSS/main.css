@@ -1,40 +1,33 @@
 body {
-  background-color: #96a397;
+  background-color: rgb(155, 155, 155);
 }
 
-ul {
+menu.topbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border-radius: 10px;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
+menu.topbar a {
+  display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px; /*-find out how to make that even*/
+  margin: 0 -2px;
   text-decoration: none;
 }
 
-li {
-  border-right: 1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+menu.topbar a:hover {
   background-color: #111;
 }
 
-.active {
+menu.topbar a:hover.active {
+  background-color: #024a30;
+}
+
+menu.topbar a.active {
   background-color: #04aa6d;
 }
