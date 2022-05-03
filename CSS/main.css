@@ -1,38 +1,3 @@
-body {
-  background-color: rgb(155, 155, 155);
-}
-
-menu.topbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-  position: fixed;
-}
-
-menu.topbar a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px; /*-find out how to make that even*/
-  margin: 0 -2px;
-  text-decoration: none;
-}
-
-menu.topbar a:hover {
-  background-color: #111;
-}
-
-menu.topbar a:hover.active {
-  background-color: #024a30;
-}
-
-menu.topbar a.active {
-  background-color: #04aa6d;
-}
-
 /* start reset*/
 html,
 body,
@@ -159,3 +124,49 @@ table {
   border-spacing: 0;
 }
 /*end reset*/
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+  text-indent: 50px;
+}
+
+body {
+  background-color: rgb(155, 155, 155);
+}
+
+.topbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  height: 44px;
+  position: fixed;
+  top: 0;
+}
+
+.topbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px; /*-find out how to make that even*/
+  margin: 0 -2px;
+  text-decoration: none;
+}
+.main {
+  margin-top: 50px;
+}
+.topbar a:hover {
+  background-color: #111;
+}
+
+.topbar a:hover.active {
+  background-color: #024a30;
+}
+
+.topbar a.active {
+  background-color: #04aa6d;
+}
