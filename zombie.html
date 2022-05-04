@@ -8,53 +8,95 @@
     <title>Zombie Survival</title>
   </head>
   <body>
+    <!--TOP BAR-->
     <div class="topbar">
       <a href="index.html" title="Home Page">Home</a>
-      <a href="news.html" title="News Page">News</a>
       <a href="rpg.html" title="Play an RPG">RPG</a>
       <a href="zombie.html" title="Play a Zombie Survival game" class="active"
         >Zombie Survival</a
       >
     </div>
+
+    <!--GAME-->
     <div class="main">
-      <iframe
-        src="https://scratch.mit.edu/projects/665948500/embed"
-        title="zombie game"
-        allowtransparency="true"
-        width="100%"
-        height="550px"
-        frameborder="0"
-        scrolling="no"
-        allowfullscreen
-        style="border: 5px solid green;"
-      ></iframe>
-      <div style="margin-top: 20px;">
-        <h1><u>Bugs</u></h1>
-        <ul>
-          <li>
-            You can take damage from every monster at once (add damage delay)
-          </li>
-          <li>
-            if you go too far off the screen you cant control the game anymore
-          </li>
-        </ul>
-      </div>
-      <div style="margin-top: 20px;">
-        <h1><u>Suggestions</u></h1>
-        <ul>
-          <li>Add starting screen</li>
-          <li>Add pausing</li>
-          <li>Add Add guide on each character and each zombie once defeated</li>
-          <li>
-            add a damage flash when a zombie takes damage so you know you hit it
-          </li>
-        </ul>
-      </div>
-      <div style="margin-top: 20px; text-align: center;">
-        <a href="" target="_blank"
-          >Please enter bugs or suggestions here *kevin i need a link to a
-          google form for this</a
+      <div style="width: 100%; height: 90vh;">
+        <iframe
+          src="https://scratch.mit.edu/projects/665948500/embed"
+          title="zombie game"
+          allowtransparency="true"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+          style="border: 5px solid green;"
+          >Game is not supported on this device</iframe
         >
+      </div>
+      <div class="big-box">
+        <!--GAME INFO-->
+        <div class="box first">
+          <h2>Zombie Survival</h2>
+          <p>
+            <em>Zombie Survival</em> is a singleplayer wave survival game in
+            which the player tries to survive as long as they can while
+            purchasing upgrades in the shop to help them continue. The game is
+            currently written by
+            <a href="https://scratch.mit.edu/users/WappyCoder/" target="_blank"
+              >WappyCoder</a
+            >
+            in scratch, but it is working on being converted to Phaser JS which
+            should help it run better.
+          </p>
+          <br />
+          <p>
+            <strong>Controls:</strong><br />
+            <em>W,A,S,D</em>: Movement<br />
+            <em>P</em>: Open shop
+          </p>
+        </div>
+
+        <div class="flex-container">
+          <!--BUGS-->
+          <div class="box">
+            <h2>Bugs</h2>
+            <ul>
+              <li>
+                You can take damage from every monster at once (add damage
+                delay)
+              </li>
+              <li>
+                if you go too far off the screen you cant control the game
+                anymore
+              </li>
+            </ul>
+          </div>
+
+          <!--SUGGESTIONS-->
+          <div class="box">
+            <h2>Suggestions</h2>
+            <ul>
+              <li>Add starting screen</li>
+              <li>Add pausing</li>
+              <li>Add guide on each character and each zombie once defeated</li>
+              <li>
+                Add a damage flash when a zombie takes damage so you know you
+                hit it
+              </li>
+              <li>Add a game border so that the player can't leave the page</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--INPUT LINK-->
+        <div class="box">
+          <p>
+            <a href="" target="_blank"
+              >Please enter bugs or suggestions here *Kevin I need a link to a
+              google form for this</a
+            >
+          </p>
+        </div>
       </div>
     </div>
   </body>

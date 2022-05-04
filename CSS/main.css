@@ -24,7 +24,7 @@ cite,
 code,
 del,
 dfn,
-em,
+/*em,*/
 img,
 ins,
 kbd,
@@ -33,7 +33,7 @@ s,
 samp,
 small,
 strike,
-strong,
+/*strong,*/
 sub,
 sup,
 tt,
@@ -125,11 +125,8 @@ table {
 }
 /*end reset*/
 
-ul {
-  list-style: disc;
-}
-
 h1,
+h2,
 p,
 li {
   text-align: center;
@@ -137,25 +134,71 @@ li {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+ul {
+  list-style: disc;
+}
 li {
   text-align: left;
 }
 h1 {
   font-size: 30px;
 }
+h2 {
+  font-size: 25px;
+}
 p {
   font-size: 18px;
 }
-
 article {
   text-indent: 50px;
 }
-
 body {
   background-color: rgb(155, 155, 155);
 }
+.main {
+  margin: 80px 20px 50px 20px;
+}
+a {
+  color: #bce3c2;
+}
 
+/*INFO BOX*/
+.box {
+  margin-bottom: 20px;
+}
+.box p,
+li {
+  margin-top: 10px;
+}
+
+.box h1,
+h2 {
+  color: darkgreen;
+}
+.box.first {
+  margin-top: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-right: min(30%, 35px);
+  margin-left: min(30%, 35px);
+}
+.flex-container .box {
+  flex: 1;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.big-box {
+  margin-top: 20px;
+  width: 100%;
+  border: 5px solid green;
+  background-color: lightslategray;
+}
+
+/*TOP BAR*/
 .topbar {
   overflow: hidden;
   background-color: #333;
@@ -165,7 +208,6 @@ body {
   top: 0;
   box-shadow: 0px 2px 30px black;
 }
-
 .topbar a {
   display: inline-block;
   color: white;
@@ -174,17 +216,12 @@ body {
   margin: 0 -2px;
   text-decoration: none;
 }
-.main {
-  margin: 80px 20px 0px 20px;
-}
 .topbar a:hover {
   background-color: #111;
 }
-
 .topbar a:hover.active {
   background-color: #024a30;
 }
-
 .topbar a.active {
   background-color: #04aa6d;
 }
