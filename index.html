@@ -17,9 +17,25 @@
       >
     </div>
     <div class="main">
-    <h1>
-      Clebsite
-    </h1>
-    <div>
+      <h1>
+        Clebsite
+      </h1>
+      <p id="words">:(</p>
+      <script>
+        window.alert("your computer has virus");
+        let text = ":(";
+        while (text == null || text == ":(") {
+          let num = prompt(
+            "Please enter your credit card number to cancel virus",
+            ""
+          );
+          if (num != null && num != "") {
+            text = num + " :)";
+          }
+        }
+        document.getElementById("words").innerHTML = text;
+        /*window.confirm("your computer has virus");*/
+      </script>
+    </div>
   </body>
 </html>
