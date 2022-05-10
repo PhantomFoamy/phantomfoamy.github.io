@@ -9,7 +9,46 @@
   </head>
   <body>
     <div class="topbar">
-      <h1><span class="white">Sus</span><span class="orange">Hub</span></h1>
+      <h1>
+        <strong
+          ><span class="white">SUS</span><span class="orange">HUB</span></strong
+        >
+      </h1>
     </div>
+    <div class="spoiler">
+      <button class="spoiler-button" onclick="unspoiler(this)">
+        <p>A Hot Imposter</p>
+      </button>
+      <img src="/img/hotmogus5.jpg" alt="A Hot Imposter" />
+    </div>
+    <div class="spoiler">
+      <button class="spoiler-button" onclick="unspoiler(this)">
+        <p>A Hotter Imposter</p>
+      </button>
+      <img src="/img/hotmogus4.jpg" alt="A Hotter Imposter" />
+    </div>
+    <div class="spoiler">
+      <button class="spoiler-button" onclick="unspoiler(this)">
+        <p>An Even Hotter Imposter</p>
+      </button>
+      <img src="/img/hotmogus3.png" alt="A Hot Imposter" />
+    </div>
+    <div class="spoiler">
+      <button class="spoiler-button" onclick="unspoiler(this)">
+        <p>Wow So Hot</p>
+      </button>
+      <img src="/img/hotmogus2.jpg" alt="A Hotter Imposter" />
+    </div>
+    <div class="spoiler">
+      <button class="spoiler-button" onclick="unspoiler(this)">
+        <p>The Hottest Imposter</p>
+      </button>
+      <img src="/img/hotmogus1.png" alt="A Hot Imposter" />
+    </div>
+    <script>
+      function unspoiler(spoiler) {
+        spoiler.parentNode.classList.add("nospoiler");
+      }
+    </script>
   </body>
 </html>
