@@ -20,22 +20,31 @@
       <h1>
         Clebsite
       </h1>
-      <p id="words">:(</p>
+      <p id="words"><u>Don't click me</u></p>
+      <a href="imposters.html" class="normal-link">Testing link</a>
+
+      <!--
+        virus script
       <script>
-        window.alert("your computer has virus");
-        let text = ":(";
-        while (text == null || text == ":(") {
-          let num = prompt(
-            "Please enter your credit card number to cancel virus",
-            ""
-          );
-          if (num != null && num != "") {
-            text = num + " :)";
-          }
+        let clicked = false;
+        if (clicked === false) {
+          document.getElementById("words").onclick = function () {
+            window.alert("your computer has virus");
+            let text = "";
+            while (text == null || text == "") {
+              let num = prompt(
+                "Please enter your credit card number to cancel virus",
+                ""
+              );
+              if (num != null && num != "") {
+                text = num + " :)";
+                document.getElementById("words").innerHTML = text;
+                clicked = true;
+              }
+            }
+          };
         }
-        document.getElementById("words").innerHTML = text;
-        /*window.confirm("your computer has virus");*/
       </script>
-    </div>
+    --></div>
   </body>
 </html>

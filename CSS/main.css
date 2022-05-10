@@ -158,9 +158,6 @@ body {
 .main {
   margin: 80px 20px 50px 20px;
 }
-a {
-  color: #bce3c2;
-}
 
 /*INFO BOX*/
 .box {
@@ -216,6 +213,7 @@ h2 {
   margin: 0 -2px;
   text-decoration: none;
 }
+
 .topbar a:hover {
   background-color: #111;
 }
@@ -224,4 +222,28 @@ h2 {
 }
 .topbar a.active {
   background-color: #04aa6d;
+}
+
+.normal-link {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+.normal-link:hover {
+  color: darkgreen;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+th {
+  font-weight: 700;
+}
+
+table {
+  margin: 20px auto 20px auto;
 }
